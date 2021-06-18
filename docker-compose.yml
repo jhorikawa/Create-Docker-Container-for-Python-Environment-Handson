@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python3:
+    restart: always
+    build: .
+    container_name: 'python3'
+    working_dir: '/root/opt'
+    tty: true
+    volumes:
+      - ./opt:/root/opt
